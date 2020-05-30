@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inserimento elemento</title>
+        <link rel="icon" type="image/png" href="images/favicons/car.png"/>
+        <link href="css/operazioni.css" rel="stylesheet" type="text/css"/>
+        <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <a href="index.html" class="back" title="Torna alla home"><i class="fa fa-home"></i></a>
+        <div class="div1">
+            <div class="div2">
+                <form name="f" method="POST" action="inserimentoAuto.php">
+                    <span class="title">Inserimento dati<font class="subtitle">Tutti i campi sono obbligatori</font></span>
+                    
+                    <div class="divField">
+                        <span class="label">NUMERO DI TELAIO</span>
+                        <input type="text" id="telaio" name="telaio" placeholder="Inserisci il numero di telaio" required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">TARGA</span>
+                        <input type="text" id="targa" name="targa" placeholder="Inserisci targa" maxlength="7" >
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">MARCA</span>
+                        <input type="text" id="marca" name="marca" placeholder="Inserisci marca automobile" required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">MODELLO</span>
+                        <input type="text" name="modello" placeholder="Inserisci modello automobile" required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">ANNO DI IMMATRICOLAZIONE</span>
+                        <input type="number" placeholder="YYYY" min=1900 max=2020 name="annoImm">
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">ALIMENTAZIONE</span>
+                        <div>
+                            <select name="alimentazione" required>
+                                <option value="" selected>Seleziona alimentazione</option>
+                                <option value="Benzina">Benzina</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Metano">Metano</option>
+                                <option value="Elettrico">Elettrico</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">TIPOLOGIA CAMBIO</span>
+                        <div>
+                            <select name="cambio" required>
+                                <option value="" selected>Seleziona cambio</option>
+                                <option value="Manuale">Manuale</option>
+                                <option value="Automatico">Automatico</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">NUMERO POSTI (CONDUCENTE INCLUSO)</span>
+                        <input type="number" name="posti" placeholder="Inserisci numero di posti" min="1" max="7" required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">NUMERO PORTE</span>
+                        <input type="number" name="porte" placeholder="Inserisci numero di porte" min="2" max="5" required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">VALORE COMMERCIALE</span>
+                        <input type="number" name="valore" placeholder="Inserisci il valore commerciale" min="0" required>
+                    </div>
+
+                    <div class="divButton">
+                        <input type="submit" value="Crea nuovo elemento" name="button" class="button" onclick="check()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inserimento elemento</title>
+        <link rel="icon" type="image/png" href="images/favicons/car.png"/>
+        <link href="css/operazioni.css" rel="stylesheet" type="text/css"/>
+        <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <a href="index.html" class="back" title="Torna alla home"><i class="fa fa-home"></i></a>
+        <div class="div1">
+            <div class="div2">
+                <form name="f" method="POST" action="inserimentoPatente.php">
+                    <span class="title">Inserimento dati<font class="subtitle">Tutti i campi sono obbligatori</font></span>
+
+                    <div class="divField">
+                        <span class="label">NUMERO DOCUMENTO</span>
+                        <input type="text" id="numerDoc" name="numeroDoc" placeholder="Inserisci il numero del documento" required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">NOME</span>
+                        <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+                      </div>
+              
+                    <div class="divField">
+                        <span class="label">COGNOME</span>
+                        <input type="text" name="cognome" placeholder="Inserisci il tuo cognome " required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">CATEGORIE</span>
+                        <input type="checkbox"  name="AM" value="AM">
+                        <label> AM</label><br>
+                        <input type="checkbox"  name="A1" value="A1">
+                        <label> A1</label><br>
+                        <input type="checkbox"  name="A2" value="A2">
+                        <label> A2</label><br>
+                        <input type="checkbox"  name="A" value="A">
+                        <label> A</label><br>
+                        <input type="checkbox"  name="B" value="B">
+                        <label> B</label><br>
+                        <input type="checkbox"  name="BE" value="BE">
+                        <label> BE</label><br>
+                        <input type="checkbox"  name="C" value="C">
+                        <label> C</label><br>
+                        <input type="checkbox"  name="CE" value="CE">
+                        <label> CE</label><br>
+                        <input type="checkbox"  name="D" value="D">
+                        <label>D</label><br>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">STATO DOCUMENTO</span>
+                        <input type="text" name="statoDoc" placeholder="Inserisci lo stato del documento" required>
+                    </div>
+                    
+                    <div class="divField">
+                        <span class="label">DATA DI RILASCIO</span>
+                        <input type="calendar" name="dataR" required>
+                    </div>
+
+                    <div class="divField">
+                        <span class="label">DATA DI SCADENZA</span>
+                        <input type="calendar" name="dataS" required>
+                    </div>
+
+                    <div class="divButton">
+                        <input type="submit" value="Crea nuovo elemento" name="button" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.up{
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}

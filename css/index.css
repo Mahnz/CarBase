@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  margin: auto;
+}
+
+.landing-title {
+  padding: 120px 0 90px;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
